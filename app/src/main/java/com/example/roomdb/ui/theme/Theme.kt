@@ -1,6 +1,5 @@
 package com.example.roomdb.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -50,4 +49,10 @@ fun RoomDBTheme(
         darkTheme -> DarkColorScheme
         else -> LightColorScheme
     }
+
+    MaterialTheme(
+        colorScheme = colorScheme,
+        typography = Typography,
+        content = content
+    )
 }
