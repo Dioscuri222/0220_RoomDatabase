@@ -74,7 +74,7 @@ fun HostNavigasi(
                 navigateToItemEntry = { navController.navigate(DestinasiEntry.route) },
                 // edit 1 Tambahan paramter navigate ToItemUpdate
                 navigateToItemUpdate = { id ->
-                    navController.navigate("${DestinasiDetailSiswa.route}/${it}")
+                    navController.navigate("${DestinasiDetailSiswa.route}/$id")
                 }
             )
         }
