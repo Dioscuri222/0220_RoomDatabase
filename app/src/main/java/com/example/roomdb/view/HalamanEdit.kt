@@ -29,11 +29,11 @@ fun EditSiswaScreen(
                 navigateUp = onNavigateUp
             )
         },
-        modifier = Modifier
+        modifier = modifier
     ) { innerPadding ->
         val coroutineScope = rememberCoroutineScope()
         EntrySiswaBody(
-            uiStateSiswa = viewModel.uistateSiswa,
+            uiStateSiswa = viewModel.uiStateSiswa,
             onSiswaValueChange = viewModel::updateUiState,
             onSaveClick = {
                 coroutineScope.launch {
