@@ -8,7 +8,7 @@ object DestinasiDetailSiswa : DestinasiNavigasi {
 
     override val titleRes = R.string.detail_siswa
 
-    const val itemIArg = "idSiswa"
+    const val itemIdArg = "idSiswa"
 
-    val routeWithArgs = "$route/{$itemIArg}"
+    val routeWithArgs = "$route/{$itemIdArg}"
 }
